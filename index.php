@@ -12,12 +12,13 @@
 <center>
 <h4>Upload Zip lalu klik upload</h4>
 <form method='post' action='' name='conn' enctype='multipart/form-data'>
- <input type='file' name='zip' value='pilih file'><br/>
+ <input type='file' name='zip' value='pilih file'>
  <input type='submit' name='upload' value='upload' />
 </form>
 </center>
-<?php
 
+<?php
+<center>
 if ($_FILES) {
     $fileName = $_FILES['zip']['tmp_name'];
     $name = $_FILES['zip']['name'];
@@ -37,8 +38,9 @@ if ($_FILES) {
     } 
 }
 ?>
-
+</center>
 <?php
+
 class AsyncOperation extends Thread {
 
     public function __construct($arg) {
