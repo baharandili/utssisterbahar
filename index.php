@@ -15,10 +15,10 @@
  <input type='file' name='zip' value='pilih file'>
  <input type='submit' name='upload' value='upload' />
 </form>
-</center>
+
 
 <?php
-<center>
+
 if ($_FILES) {
     $fileName = $_FILES['zip']['tmp_name'];
     $name = $_FILES['zip']['name'];
