@@ -3,7 +3,7 @@
 <h4>Upload Zip lalu klik upload</h4>
 <form method='post' action='' nama='conn' enctype='multipart/form-data'>
  <input type='file' nama='zip' value='pilih file'><br/>
- <button class="btn btn-lg btn-primary btn-block" input type='submit' nama='upload' value='upload' />
+ <input type='submit' nama='upload' value='upload' />
 </form>
 
 <?php
