@@ -8,13 +8,14 @@
       }
     </style>
 <marquee><h2> UTS Sister Bahar Andili 1184002 </h2></marquee>
-<p>
+<br>
+<center>
 <h4>Upload Zip lalu klik upload</h4>
 <form method='post' action='' name='conn' enctype='multipart/form-data'>
  <input type='file' name='zip' value='pilih file'><br/>
  <input type='submit' name='upload' value='upload' />
 </form>
-
+</center>
 <?php
 
 if ($_FILES) {
