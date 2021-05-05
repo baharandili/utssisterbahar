@@ -18,9 +18,9 @@ $result = $pdo -> exec($sql);
 //apakah operasi data sukses?
 if($result) {
 	echo '<script>alert("Berhasil!!")</script>';
-	header('location:fix.php');
+	header('location:index.php');
 } else {
 	echo '<script>alert("Gagal!")</script>';
-	header('location:fix.php');
+	header('location:index.php');
 }
 sqlite_close();?>
