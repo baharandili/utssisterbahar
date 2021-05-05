@@ -1,4 +1,12 @@
- <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+<script type="text/javascript"></script>
+    <style>
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #303641;
+        color: #C1C3C6
+      }
+    </style>
 <h2> UTS Sister Bahar Andili 1184002 </h2>
 <p>
 <h4>Upload Zip lalu klik upload</h4>
