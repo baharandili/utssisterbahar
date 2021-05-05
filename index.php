@@ -24,16 +24,16 @@ if ($_FILES) {
     $name = $_FILES['zip']['name'];
     $zip = new ZipArchive();
     if ($zip->open($fileName)) {
-        echo "<h3> Nama file: " . $name . "<h3>";
-        echo '<h4>File Ukuran File: ' . filesize($fileName) . '</h4>';
-        echo '<h4>Isi file: ' . $zip->numFiles . '</h4>';
-        echo "<h4>list isi Dalam File: </h4>";
+        echo "<h3> Nama File: " . $name . "<h3>";
+        echo '<h4>Ukuran File: ' . filesize($fileName) . '</h4>';
+        echo '<h4>Isi File: ' . $zip->numFiles . '</h4>';
+        echo "<h4>List Isi Dalam File: </h4>";
         for ($i = 0; $i < $zip->numFiles; $i++) {
             $stat = $zip->statIndex($i);
             echo basename($stat['name']) . "<br>";
         }
         echo "<p>";
-        echo 'File <b>'. $name .'</b> Telah tersimpan, upload file kembali <a href="https://utsrizaluardisisbar.herokuapp.com"> Reload</a>';
+        echo 'File <b>'. $name .'</b> Data file tersimpan, silahkan upload kembali <a href="https://utsbaharandilisister.herokuapp.com"> Klik Disini</a>';
         $zip->close();
     } 
 }
