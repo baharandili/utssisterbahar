@@ -7,7 +7,7 @@
         color: #C1C3C6
       }
     </style>
-<u><marquee><h2> UTS Sister Bahar Andili 1184002 </h2></marquee></u>
+<marquee><h2> UTS Sister Bahar Andili 1184002 </h2></marquee>
 <br>
 <center>
 <h4>Upload Zip Anda Di Bawah Ini</h4>
