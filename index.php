@@ -7,7 +7,7 @@
         color: #C1C3C6
       }
     </style>
-<h2> UTS Sister Bahar Andili 1184002 </h2>
+<marquee><h2> UTS Sister Bahar Andili 1184002 </h2></marquee>
 <p>
 <h4>Upload Zip lalu klik upload</h4>
 <form method='post' action='' name='conn' enctype='multipart/form-data'>
