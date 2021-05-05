@@ -1,13 +1,3 @@
-<script type="text/javascript" src="assets/dist/js/site.min.js"></script>
-    <style>
-      body {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        background-color: #303641;
-        color: #C1C3C6
-      }
-    </style>
-
 <h2> UTS Sister Bahar Andili 1184002 </h2>
 <p>
 <h4>Upload Zip lalu klik upload</h4>
