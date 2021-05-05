@@ -1,5 +1,4 @@
-<link rel="stylesheet" type="text/css" href="assets/bootflat-admin/css/bootstrap.min.css">
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-600af30ce920424c"></script>
+ <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
 <h2> UTS Sister Bahar Andili 1184002 </h2>
 <p>
 <h4>Upload Zip lalu klik upload</h4>
