@@ -1,28 +1,28 @@
 <h2> UTS Sister Bahar Andili 1184002 </h2>
 <p>
 <h4>Upload Zip lalu klik upload</h4>
-<form method='post' action='' nama='conn' enctype='multipart/form-data'>
- <input type='file' nama='zip' value='pilih file'><br/>
- <input type='submit' nama='upload' value='upload' />
+<form method='post' action='' name='conn' enctype='multipart/form-data'>
+ <input type='file' name='zip' value='pilih file'><br/>
+ <input type='submit' name='upload' value='upload' />
 </form>
 
 <?php
 
 if ($_FILES) {
     $fileName = $_FILES['zip']['tmp_name'];
-    $nama = $_FILES['zip']['nama'];
+    $name = $_FILES['zip']['name'];
     $zip = new ZipArchive();
     if ($zip->open($fileName)) {
-        echo "<h3> Nama: " . $nama . "<h3>";
+        echo "<h3> Name: " . $name . "<h3>";
         echo '<h4>File size: ' . filesize($fileName) . '</h4>';
         echo '<h4>Total files: ' . $zip->numFiles . '</h4>';
         echo "<h4>Isi Dalam File: </h4>";
         for ($i = 0; $i < $zip->numFiles; $i++) {
             $stat = $zip->statIndex($i);
-            echo basename($stat['nama']) . "<br>";
+            echo basename($stat['name']) . "<br>";
         }
         echo "<p>";
-        echo 'File <b>'. $nama .'</b> Telah tersimpan, upload file kembali <a href="https://utsrizaluardisisbar.herokuapp.com"> Reload</a>';
+        echo 'File <b>'. $name .'</b> Telah tersimpan, upload file kembali <a href="https://utsrizaluardisisbar.herokuapp.com"> Reload</a>';
         $zip->close();
     } 
 }

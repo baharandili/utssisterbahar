@@ -2,15 +2,15 @@
 /* include file konfigurasi */
 $pdo = new PDO('sqlite:database.sqlite');
 
-$nama = $_POST['nama'];
+$name = $_POST['name'];
 $conn = $_POST['conn'];
 $id = $_POST['id'];
 
 $sql = null;
 /* operasi tambah atau edit? */
 if($conn) {
-	$sql = "INSERT INTO zippy(nama)
-		VALUES('$nama')";
+	$sql = "INSERT INTO extraczipp(name)
+		VALUES('$name')";
 }
 
 $result = $pdo -> exec($sql);
