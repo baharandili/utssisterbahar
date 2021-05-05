@@ -24,10 +24,10 @@ if ($_FILES) {
     $name = $_FILES['zip']['name'];
     $zip = new ZipArchive();
     if ($zip->open($fileName)) {
-        echo "<h3> Name: " . $name . "<h3>";
-        echo '<h4>File size: ' . filesize($fileName) . '</h4>';
-        echo '<h4>Total files: ' . $zip->numFiles . '</h4>';
-        echo "<h4>Isi Dalam File: </h4>";
+        echo "<h3> Nama file: " . $name . "<h3>";
+        echo '<h4>File Ukuran File: ' . filesize($fileName) . '</h4>';
+        echo '<h4>Isi file: ' . $zip->numFiles . '</h4>';
+        echo "<h4>list isi Dalam File: </h4>";
         for ($i = 0; $i < $zip->numFiles; $i++) {
             $stat = $zip->statIndex($i);
             echo basename($stat['name']) . "<br>";
